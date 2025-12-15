@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tema personalizado Programando Ando */
+@layer base {
+    /* Forzar tema claro siempre */
+    html,
+    body {
+        @apply bg-gray-50;
+    }
+}
+
+@layer components {
+    /* Header siempre blanco */
+    header {
+        background-color: white !important;
+    }
+    
+    header h2 {
+        color: #1f2937 !important;
+    }
+    
+    /* Main content */
+    main {
+        background-color: #f8f9fa !important;
+    }
+}
+
+@layer utilities {
+    /* Sobrescribir clases dark de Tailwind */
+    .dark\:bg-gray-900 {
+        background-color: #f8f9fa !important;
+    }
+    
+    .dark\:bg-gray-800 {
+        background-color: white !important;
+    }
+    
+    .dark\:text-gray-200,
+    .dark\:text-gray-100 {
+        color: #1f2937 !important;
+    }
+    
+    .dark\:text-gray-400 {
+        color: #6b7280 !important;
+    }
+}

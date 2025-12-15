@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config('app.name', 'Laravel') }} - Programando Ando</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,14 +13,36 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
+        <style>
+            /* Forzar tema claro siempre */
+            html, body {
+                background-color: #f8f9fa !important;
+            }
+            
+            /* Header siempre blanco */
+            header {
+                background-color: white !important;
+                box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1) !important;
+            }
+            
+            header h2 {
+                color: #1f2937 !important;
+            }
+            
+            /* Main content fondo claro */
+            main {
+                background-color: #f8f9fa !important;
+            }
+        </style>
     </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <body class="font-sans antialiased" style="background-color: #f8f9fa !important;">
+        <div class="min-h-screen" style="background-color: #f8f9fa !important;">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
             @isset($header)
-                <header class="bg-white dark:bg-gray-800 shadow">
+                <header style="background-color: white !important; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);">
                     <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                         {{ $header }}
                     </div>
@@ -28,7 +50,7 @@
             @endisset
 
             <!-- Page Content -->
-            <main>
+            <main style="background-color: #f8f9fa !important;">
                 {{ $slot }}
             </main>
         </div>
