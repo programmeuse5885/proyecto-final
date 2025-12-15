@@ -1,59 +1,206 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 Programando Ando
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Plataforma web para estudiantes que desean aprender diferentes lenguajes de programación de manera estructurada y personalizada.
 
-## About Laravel
+> **Proyecto Final** - Curso de Desarrollo Web con PHP
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📋 Descripción del Proyecto
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**Programando Ando** es una aplicación web desarrollada con Laravel que permite a los estudiantes registrarse y acceder a recursos de aprendizaje de programación. La plataforma cuenta con un sistema de autenticación robusto que incluye login tradicional y autenticación con Google OAuth 2.0.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Este proyecto fue desarrollado como proyecto final del curso **Desarrollo Web con PHP**, aplicando todos los conceptos aprendidos durante el curso: autenticación, control de acceso, OAuth 2.0, y gestión de sesiones.
 
-## Learning Laravel
+## 🎓 Objetivo Académico
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Este proyecto cumple con los requisitos del proyecto final del curso **Desarrollo Web con PHP**:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- ✅ Implementación de login con usuario y contraseña
+- ✅ Implementación de login con Google OAuth 2.0
+- ✅ Dashboard personalizado para usuarios registrados
+- ✅ Página de bienvenida para visitantes no registrados
+- ✅ Control de acceso y gestión de sesiones
+- ✅ Uso de Laravel Breeze y Socialite
+- ✅ Documentación completa del proyecto
+- ✅ Versionamiento con Git y GitHub
 
-## Laravel Sponsors
+## ✨ Características Principales
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- 🔐 **Autenticación dual:**
+  - Login tradicional con usuario y contraseña
+  - Login con Google (OAuth 2.0)
+  
+- 👥 **Experiencias diferenciadas:**
+  - Página de bienvenida para visitantes no registrados
+  - Dashboard personalizado para estudiantes registrados
+  
+- 🎓 **Enfocado en el aprendizaje:**
+  - Plataforma diseñada para estudiantes de programación
+  - Acceso a recursos de múltiples lenguajes de programación
 
-### Premium Partners
+## 🛠️ Tecnologías Utilizadas
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- **Backend:** PHP 8.x con Laravel 11.x
+- **Frontend:** Blade Templates, TailwindCSS
+- **Autenticación:** Laravel Breeze + Laravel Socialite
+- **Base de datos:** SQLite (configurable a MySQL/PostgreSQL)
+- **OAuth Provider:** Google Cloud Platform
 
-## Contributing
+## 📦 Requisitos Previos
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Antes de instalar el proyecto, asegúrate de tener:
 
-## Code of Conduct
+- PHP >= 8.2
+- Composer
+- Node.js y NPM
+- Git
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🚀 Instalación
 
-## Security Vulnerabilities
+### 1. Clonar el repositorio
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+git clone https://github.com/programmeuse5885/proyecto-final.git
+cd proyecto-final
+```
 
-## License
+### 2. Instalar dependencias de PHP
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+composer install
+```
+
+### 3. Instalar dependencias de Node.js
+
+```bash
+npm install
+```
+
+### 4. Configurar variables de entorno
+
+```bash
+# Copiar el archivo de ejemplo
+cp .env.example .env
+
+# Generar la clave de aplicación
+php artisan key:generate
+```
+
+### 5. Configurar archivo .env
+
+Edita el archivo `.env` y configura:
+
+```env
+APP_NAME="Programando Ando"
+APP_URL=http://programandoando.com
+
+# Configuración de Google OAuth
+GOOGLE_CLIENT_ID=tu_client_id_aqui
+GOOGLE_CLIENT_SECRET=tu_client_secret_aqui
+GOOGLE_REDIRECT_URI=http://programandoando.com/auth/google/callback
+```
+
+### 6. Configurar dominio local (Windows)
+
+Edita el archivo `C:\Windows\System32\drivers\etc\hosts` como administrador y agrega:
+
+```
+127.0.0.1    programandoando.com
+```
+
+### 7. Configurar base de datos
+
+```bash
+# Crear la base de datos (SQLite)
+touch database/database.sqlite
+
+# Ejecutar migraciones
+php artisan migrate
+```
+
+### 8. Compilar assets
+
+```bash
+npm run dev
+```
+
+### 9. Ejecutar el servidor
+
+En una terminal separada:
+
+```bash
+php artisan serve --host=programandoando.com --port=80
+```
+
+## 🔑 Configuración de Google OAuth
+
+Para habilitar el login con Google:
+
+1. Ve a [Google Cloud Console](https://console.cloud.google.com/)
+2. Crea un nuevo proyecto o selecciona uno existente
+3. Habilita la API de Google+
+4. Ve a "Credenciales" y crea credenciales OAuth 2.0
+5. Configura las URIs autorizadas:
+   - URI de redireccionamiento: `http://programandoando.com/auth/google/callback`
+6. Copia el Client ID y Client Secret a tu archivo `.env`
+
+## 📁 Estructura del Proyecto
+
+```
+proyecto-final/
+├── app/
+│   ├── Http/Controllers/     # Controladores de la aplicación
+│   └── Models/               # Modelos
+├── resources/
+│   └── views/
+│       ├── welcome.blade.php # Página de bienvenida (no registrados)
+│       └── dashboard.blade.php # Dashboard (usuarios registrados)
+├── routes/
+│   └── web.php              # Rutas de la aplicación
+├── database/
+│   └── migrations/          # Migraciones de base de datos
+└── .env.example             # Variables de entorno de ejemplo
+```
+
+## 🎯 Funcionalidades por Implementar
+
+- [ ] Catálogo de cursos de programación
+- [ ] Sistema de progreso del estudiante
+- [ ] Recursos descargables por lenguaje
+- [ ] Foros de discusión
+- [ ] Sistema de certificados
+
+## 👨‍💻 Historial de Commits
+
+Este proyecto sigue una estructura de commits organizada:
+
+1. **Inicial** - Proyecto Laravel base
+2. **Feature: Breeze** - Autenticación con usuario y contraseña
+3. **Feature: OAuth** - Integración con Google OAuth 2.0
+4. **Docs: README** - Documentación del proyecto
+5. **Feature: Vistas** - Personalización de dashboard y welcome
+
+## 🤝 Contribuciones
+
+Este es un proyecto académico, pero las sugerencias son bienvenidas.
+
+## 📝 Licencia
+
+Este proyecto es de código abierto y está disponible bajo la licencia MIT.
+
+## 👤 Autor
+
+**Programmeuse5885**
+- GitHub: [@programmeuse5885](https://github.com/programmeuse5885)
+
+## 📞 Soporte
+
+Si tienes problemas con la instalación o configuración:
+
+1. Verifica que todas las dependencias estén instaladas
+2. Asegúrate de que el archivo `.env` esté correctamente configurado
+3. Revisa que el dominio esté agregado al archivo hosts
+4. Verifica que las credenciales de Google OAuth sean correctas
+
+---
+
+⭐ Si este proyecto te fue útil, no olvides darle una estrella en GitHub
